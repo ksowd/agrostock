@@ -1,15 +1,17 @@
 <ion-menu [content]="content" id="menu1">
 
-  <ion-header>
-    <ion-toolbar color="secondary">
-      <ion-title>Menu 1</ion-title>
+  <ion-header no-border>
+    <ion-toolbar transparent>
+      <ion-title>
+        <img height="40" src="assets/icon/logo.svg">
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-    <ion-list>
-      <button ion-item menuClose="menu1" detail-none>
-        Close Menu 1
+    <ion-list *ngIf=privatePages>
+      <button color="space" menuClose ion-item *ngFor="let p of privatePages" (click)="openPage(p)">
+        {{p.title}}
       </button>
     </ion-list>
   </ion-content>

@@ -86,3 +86,8 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$toolbar-ios-button-color: color($colors, secondary, base);
+//$toolbar-ios-title-text-color: #ffaa3f;
+$toolbar-md-button-color: color($colors, secondary, base);
+//$toolbar-md-title-text-color: #ffaa3f;
