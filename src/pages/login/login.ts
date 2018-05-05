@@ -32,10 +32,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   signup() {
-  	this.navCtrl.push("SignupPage", {}, {
-		animate: true,
-		direction: "forward"
-    });
+  	this.navCtrl.push("SignupPage", {}, {animate: true, direction: "forward"});
   }
   login() {
     console.log(this.form.value);

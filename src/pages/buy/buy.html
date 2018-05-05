@@ -12,4 +12,22 @@
 
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        
+        <ion-searchbar
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)"
+        placeholder="Procurar">
+        </ion-searchbar>
+        
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
 </ion-content>
