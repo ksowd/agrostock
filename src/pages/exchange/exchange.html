@@ -7,21 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-    
-          <ion-searchbar 
-          [(ngModel)]="myInput" 
-          [showCancelButton]="shouldShowCancel" 
-          (ionInput)="onInput($event)" 
-          (ionCancel)="onCancel($event)"
-          placeholder="Procurar">
-          </ion-searchbar>
-    
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-title>
+      <img height="40" src="assets/icon/logo.svg">
+    </ion-title>
+    <ion-buttons end>
+      <button>
+        <ion-icon name="funnel" float-right></ion-icon>
+      </button>
+      
+
+
+    </ion-buttons>
     <!-- <ion-title>exchange</ion-title> -->
   </ion-navbar>
 
@@ -29,5 +25,7 @@
 
 
 <ion-content padding>
-    
+    <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)"
+      placeholder="Procurar">
+    </ion-searchbar>
 </ion-content>
