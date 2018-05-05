@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events, ModalController } from 'ionic-angular';
 
 /**
  * Generated class for the RentPage page.
@@ -15,11 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RentPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public events: Events,
+    public modalCtrl: ModalController
+  ) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RentPage');
+  new() {
+    let profileModal = this.modalCtrl.create('NewPage', { title: 'Aluguel', userId: 8675309 });
+    profileModal.present();
   }
 
 }
