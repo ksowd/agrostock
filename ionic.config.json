@@ -1,0 +1,8 @@
+{
+  "name": "agrostock",
+  "app_id": "9bfcfbd8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
