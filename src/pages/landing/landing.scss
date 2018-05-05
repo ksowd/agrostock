@@ -1,3 +1,15 @@
 page-landing {
-
+    ion-slides h1, ion-slides p{
+        padding: 15px;
+        
+        color: black;
+    }
+    
+    .slide1::after {
+        background-image: url('assets/imgs/img1c.jpeg');
+        opacity: .4;
+    }
+    .swiper-pagination-bullet-active {
+        background: #32db64;
+    }
 }
