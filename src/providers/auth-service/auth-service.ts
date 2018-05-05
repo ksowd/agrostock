@@ -29,4 +29,15 @@ export class AuthServiceProvider {
 
     });
   }
+
+  signup(data) {
+    return new Promise((resolve, reject) => {
+      this.http.post(this.apiurl + "signup", data).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      })
+
+    });
+  }
 }
