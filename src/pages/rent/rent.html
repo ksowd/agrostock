@@ -7,26 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>rent</ion-title>
+    <!-- <ion-title>rent</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+    
+          <ion-searchbar 
+          [(ngModel)]="myInput" 
+          [showCancelButton]="shouldShowCancel" 
+          (ionInput)="onInput($event)" 
+          (ionCancel)="onCancel($event)"
+          placeholder="Procurar">
+          </ion-searchbar>
+    
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-  
-        <ion-searchbar 
-        [(ngModel)]="myInput" 
-        [showCancelButton]="shouldShowCancel" 
-        (ionInput)="onInput($event)" 
-        (ionCancel)="onCancel($event)"
-        placeholder="Procurar">
-        </ion-searchbar>
-  
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>
