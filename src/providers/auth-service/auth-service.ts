@@ -24,7 +24,7 @@ export class AuthServiceProvider {
       this.http.post(this.apiurl + "login", data).subscribe(res => {
         resolve(res);
       }, (err) => {
-        reject(err);
+        resolve(err);
       })
 
     });

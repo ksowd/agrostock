@@ -1,1 +1,34 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" id="menu1">
+
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Menu 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose="menu1" detail-none>
+        Close Menu 1
+      </button>
+    </ion-list>
+  </ion-content>
+
+  <ion-footer>
+    <ion-navbar>
+      <ion-buttons center>
+        <ion-grid>
+          <ion-row justify-content-center>
+            <button ion-button color="secondary" block round (click)="logout()" menuToggle>
+              <ion-icon name="log-out" item-end></ion-icon>
+              Sair
+            </button>
+          </ion-row>
+        </ion-grid>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-footer>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

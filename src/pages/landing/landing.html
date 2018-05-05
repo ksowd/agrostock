@@ -1,13 +1,9 @@
-<!--
-  Generated template for the LandingPage page.
+<ion-header no-border>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>landing</ion-title>
+  <ion-navbar transparent>
+    <ion-title text-center>
+      <img height="40" src="assets/icon/logo.svg">
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,12 +13,10 @@
 
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-
-      <button ion-button block large text-uppercase (click) = "next()">
-        Avançar
-      </button>
-
+<ion-footer no-border>
+  <ion-toolbar transparent>
+    <button color="secondary" ion-button full large text-uppercase (click)="next()">
+      Avançar
+    </button>
   </ion-toolbar>
 </ion-footer>
