@@ -10,7 +10,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>buy</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          
+          <ion-searchbar animated=true
+          [(ngModel)]="myInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput($event)"
+          (ionCancel)="onCancel($event)"
+          placeholder="Procurar">
+          </ion-searchbar>
+          
+        </ion-col>
+      </ion-row>
+    
+    
+    
+    </ion-grid>
+    <!-- <ion-title>buy</ion-title> -->
   </ion-navbar>
 
 </ion-header>
