@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events, ModalController } from 'ionic-angular';
 
 /**
  * Generated class for the SellPage page.
@@ -18,12 +18,18 @@ export class SellPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public events: Events
+    public events: Events,
+    public modalCtrl: ModalController
   ) {
   }
 
-  ionViewWillEnter() {
-    this.events.publish('app:mode', 'venda');
+  onInput(event) {
+
+  }
+
+  new() {
+    let profileModal = this.modalCtrl.create('NewPage', { title: 'Venda', userId: 8675309 });
+    profileModal.present();
   }
 
 }

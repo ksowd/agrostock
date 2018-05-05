@@ -56,27 +56,8 @@ export class MyApp {
         { title: 'CLIMA', component: 'WeatherPage', icon: '' },
         { title: 'INTERESSES', component: 'WishlistPage', icon: '' },
         { title: 'NEGOCIAÇÕES', component: 'TalksPage', icon: '' },
-      ]
-    }
-    else if (this.mode == 'venda') {
-      this.privatePages = [
-        { title: 'COTAÇÃO', component: 'CotationPage', icon: '' },
-        { title: 'CLIMA', component: 'WeatherPage', icon: '' },
-        { title: 'NEGOCIAÇÕES', component: 'TalksPage', icon: '' },
-      ]
-    }
-    else if (this.mode == 'troca') {
-      this.privatePages = [
-        { title: 'COTAÇÃO', component: 'CotationPage', icon: '' },
-        { title: 'CLIMA', component: 'WeatherPage', icon: '' },
-        { title: 'NEGOCIAÇÕES', component: 'TalksPage', icon: '' },
         { title: 'ITEMS', component: 'ItemsPage', icon: '' },
-      ]
-    }
-    else if (this.mode == 'aluguel') {
-      this.privatePages = [
-        { title: 'COTAÇÃO', component: 'CotationPage', icon: '' },
-        { title: 'CLIMA', component: 'WeatherPage', icon: '' },
+        { title: 'MINHAS INFORMAÇÕES', component: 'UserPage', icon: '' },
       ]
     }
   }

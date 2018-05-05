@@ -15,7 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TalksPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  pet: string = "puppies";
+  isAndroid: boolean = false;
+  
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams
+  ) {
   }
 
   ionViewDidLoad() {
